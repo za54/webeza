@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Meza Archive</title>
+
+<!-- HUBUNGKAN CSS -->
+<link rel="stylesheet" href="style.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    color: #f5e6c8;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    margin-top: 35vh;
+    font-size: 45px;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    background: gold;
+}
+</style>
+</head>
+
+<body>
+
+<!-- BACKGROUND DARI CSS -->
+<div class="bg"></div>
+<div class="fog"></div>
+
+<h1>Meza 🎶</h1>
+
+<audio id="musik" loop>
+    <source src="goldenbrown.mp3" type="audio/mpeg">
+</audio>
+
+<div>
+    <a href="https://wa.me/62895320911586" class="button">WhatsApp</a>
+    <a href="https://www.instagram.com/ezagatauu?igsh=dnB1OHU3MnUydndv" class="button">Instagram</a>
+</div>
+
+<script>
+let audio = document.getElementById("musik");
+
+window.onload = () => audio.play();
+document.body.addEventListener("click", () => audio.play());
+</script>
+
+</body>
+</html>
